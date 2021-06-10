@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "name": "some comment123",
+      "email": "yy@gmail.com123",
+      "address": "indiau",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "uzma",
+      "email": "yy@gmail.com",
+      "address": "india"
+    },
+    {
+      "name": "samreen",
+      "email": "yy@gmail.com",
+      "address": "india",
+      "id": 3
+    },
+    {
+      "name": "jnu",
+      "email": "yy@gmail.com",
+      "address": "kerl2",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "modi",
+      "email": "yy@gmail.com",
+      "address": "india"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
