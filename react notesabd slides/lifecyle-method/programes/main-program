@@ -1,0 +1,52 @@
+import { Component } from "react";
+import H from "./H";
+
+
+class Updating extends Component{
+constructor(){
+super();
+this.state={
+count:0,
+show:true,
+name:"sachin"
+
+}
+    console.log("customer arrived")
+}
+componentDidMount(){
+    console.log("customer has taken the seat")
+}
+
+componentDidUpdate(preProps,preStates){
+    console.log("customer has given the order 1",preStates.count,this.state.count)
+}
+
+shouldComponentUpdate(){
+    console.log("customer donot have but he wants one more order maner can i give")
+    console.log("dont serve")
+    return true;
+}
+
+
+render(){
+    console.log("im monitoring costumers movements")
+    return (
+        <> 
+        
+        <h1>{this.state.count}</h1>
+        <button  onClick={()=>{this.setState({count:this.state.count+1})}} >click me</button>
+
+<h2>
+<h2>im </h2>
+{this.state.show==true ?<H/>:( <span>{this.state.name}</span>)}
+</h2>
+
+        <button onClick={()=>{this.setState({show:!this.state.show})}}>hide and show</button>
+        
+        </>
+    )
+}
+
+
+}
+export default Updating;
