@@ -1,0 +1,18 @@
+import React, { Component } from 'react'
+
+class H extends Component {
+    componentWillUnmount(){
+        console.log("customer went out")
+    }
+
+
+    render(){
+    return (
+        <div>
+            <h1>im courosel</h1>
+        </div>
+    )
+    }
+}
+
+export default H
