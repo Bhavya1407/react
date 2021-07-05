@@ -14,7 +14,7 @@ export class FirParent extends Component {
         return (
             <div>
                 <FIRefs ref={this.inputRef}/>
-                <button onClick={this.clickHandler}>click me</button>
+                <button onClick={()=>{this.clickHandler()}}>click me</button>
             </div>
         )
     }
